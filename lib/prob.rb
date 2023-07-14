@@ -245,6 +245,13 @@ module Probably
             end
             self.class.new :MAP, tmp
         end
+        
+        private
+
+        def block1(value)
+            yield value
+            value
+        end
     end
 
     # create uniformly distributed Distribution from array of values
